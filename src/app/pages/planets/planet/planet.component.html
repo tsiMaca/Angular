@@ -1,0 +1,23 @@
+<mat-card class="card">
+    <mat-card-header>
+        <mat-card-title>
+            {{planet.name}}
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <h6>population:</h6> {{planet.population}}
+        <h6>rotation_period</h6> {{planet.rotation_period}}
+        <h6>orbital_period</h6> {{planet.orbital_period}}
+        <h6>diameter</h6> {{planet.diameter}}
+        <h6>climate</h6> {{planet.climate}}
+        <h6>Residents</h6>
+        <h6>Residents</h6>
+        <app-residents [residentUrls]="planet.residents"
+            (residentUrlEmitter)="planet.residents = $event"></app-residents>
+
+      
+
+    </mat-card-content>
+
+
+</mat-card>

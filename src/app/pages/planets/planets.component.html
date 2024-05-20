@@ -1,0 +1,8 @@
+<section class="planets">
+  <app-planet
+    *ngFor="let planet of planets; let i = index"
+    [planet]="planet"
+    [index]="i"
+    (residentsClick)="onResidentsClick($event)">
+  </app-planet>
+</section>

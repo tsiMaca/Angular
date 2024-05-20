@@ -1,0 +1,10 @@
+<h2>Residents</h2>
+<ul>
+  <li *ngFor="let resident of residents">
+    <div *ngIf="resident">
+      <p>Name: {{ resident.name }}</p>
+      <p>Gender: {{ resident.gender }}</p>
+      
+    </div>
+  </li>
+</ul>
